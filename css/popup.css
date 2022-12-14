@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+/*일러스트 이미지 팝업*/
+.popup0
+{left:0;
+      top:0;
+      width:100%;
+      height:100%;
+      background:rgba(0, 0, 0, 0.5);
+      display:none;}
+.up1 {top:5%;
+     left:35%;
+     padding:5px;
+     position:fixed;}
+.up2 {top:5%;
+     left:35%;
+     padding:5px;
+     position:fixed;}
+.up3 {top:5%;
+     left:35%;
+     padding:5px;
+     position:fixed;}
+.up4 {top:80%;
+     left:35%;
+     padding:5px;
+     position:fixed;}
+.up5 {top:5%;
+     left:35%;
+     padding:5px;
+     position:fixed;}
+.up6 {top:5%;
+     left:35%;
+     padding:5px;
+     position:fixed;}
+.up7 {top:5%;
+     left:35%;
+     padding:5px;
+     position:fixed;}
+.up8 {top:5%;
+     left:35%;
+     padding:5px;
+     position:fixed;}
+.up9 {top:5%;
+     left:35%;
+     padding:5px;
+     position:fixed;}
+.up img {display:inline-block;
+         text-align:center;}
+.button {text-align:center;}         
+button {border:none;
+        width:100px;
+        height:50px;
+        font-size:5em;
+        background:none;
+        text-align:center;
+        position:absolute;
+        right:3%;
+        top:3%;}
+button:hover {color:white;}
+
+/*포스터 팝업*/
+.modal {position:fixed;
+         top:0;
+         left:0;
+         width:100%;
+         height:100%;
+         background:rgba(0, 0, 0, 0.9);
+         display:none;}         
+.bob, .ai500 {position:absolute;
+        top:10%;
+        left:36%;
+        border:10px solid white;
+        background:white;}
+.bob2 {position:absolute;
+       top:10%;
+       left:25%;}        
+.bob img, .ai500 img {width:450px;}
+.bob2 img {width:1000px;}   
+
+/*웹프로젝트 팝업*/
+.aipro  {position:absolute;
+         top:5%;
+         left:16%;
+         border:10px solid white;
+         background:white;}
+.aipro2  {position:absolute;
+         top:2%;
+         left:35%;
+         border:10px solid white;
+         background:white;}
