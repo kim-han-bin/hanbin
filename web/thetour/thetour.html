@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="nolja.js" type="text/javascript" defer></script>
+    <script src="jquery-1.12.3.js" type="text/javascript"></script>
+    <title>THE NOLJA (호텔 예약사이트)</title>
+</head>
+<body>
+    <div id="all">
+        <header>
+            <div class="logo">
+                <a href="thetour.html">THE NOLJA</a>
+            </div>
+            <div class="search">
+                <textarea name="search" id="search" style="resize:none; height:30px; padding-top:10px; border:none; font-size:1.1em;" placeholder="검색어를 입력하세요" cols="60%" rows="2"></textarea>
+                <button>검 색</button>
+            </div>
+            <div class="bag"><a href="#">장바구니</a></div>
+            <div class="line"></div>
+            <nav>
+                <ul>
+                    <li><a href="#">추천</a></li>
+                    <li><a href="#">국내숙소</a></li>
+                    <li><a href="#">즐길거리</a></li>
+                    <li><a href="#">교통/항공</a></li>
+                    <li><a href="#">해외여행</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="line"></div>
+        <aside>
+            <ul class="ad">
+                <li><a href="#"><img src="img/aside/aside1.jpg" alt="a1"></a></li>
+                <li><a href="#"><img src="img/aside/aside5.jpg" alt="a3"></a></li>
+                <li><a href="#"><img src="img/aside/aside4.jpg" alt="a3"></a></li>
+                <li><a href="#"><img src="img/aside/aside3.jpg" alt="a3"></a></li>
+                <li><a href="#"><img src="img/aside/aside2.jpg" alt="a2"></a></li>
+            </ul>
+            <!--
+            <ul class="ab">
+                <li class="ab_play">▷▷</li>
+                <li class="ab_stop">■</li>
+                <li class="ab_pre">▶</li>
+            </ul>
+            -->
+        </aside>
+        <div id="cont">
+            <div class="title">바로가기</div>
+            <div class="line"></div>
+            <ul>
+                <li><a href="#">d</a></li>
+                <li><a href="#">호텔</a></li>
+                <li><a href="#">펜션/풀빌라</a></li>
+                <li><a href="#">레저/티켓</a></li>
+                <li><a href="#">고속버스</a></li>
+                <li><a href="#">전시예매</a></li>
+                <li><a href="#">기차</a></li>
+            </ul>    
+        </div>
+        <div id="icon">
+            <ul>
+                <li><a href="#">MENU1</a></li>
+                <li><a href="#">MENU2</a></li>
+                <li><a href="#">MENU3</a></li>
+                <li><a href="#">MENU4</a></li>
+                <li><a href="#">MENU5</a></li>
+                <li><a href="#">MENU6</a></li>
+                <li><a href="#">MENU7</a></li>
+                <li><a href="#">MENU8</a></li>
+                <li><a href="#">MENU9</a></li>
+                <li><a href="#">MENU10</a></li>
+            </ul>    
+        </div>
+        <div id="live">
+            <div class="title">더놀자라이브</div>
+            <div class="zenbu"><a href="#">전체보기</a></div>
+            <div class="line"></div>
+            <ul>
+                <li>live1</li>
+                <li>live2</li>
+                <li>live3</li>
+                <li>live4</li>
+            </ul>    
+        </div>
+        <div id="event">
+            <div class="title">킹특가더놀자</div>
+            <div class="line"></div>
+            <ul>
+                <li>event1</li>
+                <li>event2</li>
+                <li>event3</li>
+                <li>event4</li>
+            </ul>    
+        </div>
+        <div id="popular">
+            <div class="title">인기 여행지</div>
+            <div class="line"></div>
+            <ul>
+                <li><a href="#">제주도</a></li>
+                <li><a href="#">강원도</a></li>
+                <li><a href="#">부산</a></li>
+                <li><a href="#">서울</a></li>
+                <li><a href="#">경주</a></li>
+                <li><a href="#">광주</a></li>
+            </ul>    
+        </div>
+        <div id="hotel">
+            <div class="title"><span>우리도 호캉스 갈까?</span></div>
+            <div class="line"></div>
+            <ul class="hotelmenu">
+                <li><a href="#">서울</a></li>
+                <li><a href="#">경인강원</a></li>
+                <li><a href="#">휴가에딱</a></li>
+                <li><a href="#">전국인기</a></li>
+            </ul>
+            <hr>
+            <ul class="hotellist">
+                <li><a href="#">
+                    <div>
+                    <img src="img/hotel/hotel1.jpg" alt="hotel1">
+                    </div>   
+                    <p>튤립 호텔</p>     
+                </a></li>
+                <li><a href="#">
+                    <div>
+                    <img src="img/hotel/hotel2.jpg" alt="hotel1">
+                    </div>
+                    <p>동방 호텔</p>
+                </a>    
+                </li>
+                <li><a href="#">
+                    <div>
+                    <img src="img/hotel/hotel3.jpg" alt="hotel1">
+                    </div>
+                    <p>레이크 사이드 호텔</p>
+                </a>    
+                </li>
+                <li><a href="#">
+                    <div>
+                    <img src="img/hotel/hotel4.jpg" alt="hotel1">
+                    <p>뉴라온 스테이 호텔</p>
+                    </div>
+                </a>    
+                </li>
+            </ul>
+        </div>
+    
+    <footer>
+        <div class="f1">
+            <select name="family" id="fam">
+                <option value="패밀리사이트" selected>패밀리 사이트</option>
+                <option value="비지니스 사이트">비지니스 사이트</option>
+                <option value="파트너센터">파트너센터</option>
+                <option value="호텔다운">호텔다운</option>
+                <option value="더놀자 광고센터">더놀자 광고센터</option>
+                <option value="나우웨이트">나우웨이트</option>
+                <option value="더더포인트">도도포인트</option>
+            </select>
+        </div>
+        <div class="f2">
+           <a href="thetour.html">THE NONJA</a>
+        </div>
+        <div class="f3">
+            <p>(주)더놀자는 포트폴리오 용도로 만들어진 가상의 사이트입니다.</p>
+            <p>MADE BY KIMHANBIN</p>            
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
