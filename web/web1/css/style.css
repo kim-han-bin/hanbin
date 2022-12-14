@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+/* 주조색 #524fa1 
+   보조색 #817cfd
+*/
+
+
+/*전체 스타일*/
+* {font-family:"맑은 고딕";
+   margin: 0 auto;
+   padding: 0;
+   box-sizing:border-box; 
+  }
+ul {list-style:none;}
+a  {text-decoration:none;
+    display:block;
+    color:inherit;} /*기존 문자색 지정*/
+body {width:100%;
+      background: #ffffff;
+      color:#333333;}
+.clear {clear:both;}
+
+
+
+/*레이아웃*/      
+#container {width:1200px;
+            display:block;}
+/*헤더*/            
+header {height:100px;;}
+.logo {float:left; /* 로고 위치 */
+       width:200px; /* 가로 길이 */
+       height:100px; /* 세로 높이 */
+       }
+.logo img {margin-top:20px; /*로고 상단 여백*/
+           width:200px; /* 로고 가로 길이 */
+           height:80px;} /*로고 세로 길이 */
+.navi {float:right; /*주메뉴 위치*/
+       width:800px; /*주메뉴 넓이*/
+       margin-top:30px;} /*주메뉴 상단과의 여백*/
+.navi li {float:left; /*주메뉴 위치 지정 */
+          width:200px; /*주메뉴 각 메뉴 넓이*/
+          text-align:center; /*텍스트 중앙 정렬 */
+          position: relative; /*서브메뉴 자리 지정 */
+          font-weight:bold;
+       }
+.navi li a {padding:10px;} /*주메뉴 주변 여백 */
+.navi > li {transition:all 0.4s;} /* 서브 리스트 */          
+.navi>li:hover {background:#524fa1 ; /*서브메뉴 마우스오버 배경색 */
+                color:#fff;
+                font-weight:bold;} /*마우스 오버 글자색 */
+.submenu {background:rgba(255, 255, 255, 0.5);/*서브메뉴 배경색깔 */
+      position: absolute; /*위치 고정*/
+      z-index:10; /*위에 올려두기*/
+      width:100%; /* 기존 넓이 고정 */
+      display:none; /*숨겨둠*/
+}
+.submenu>li {color:#333333; /*메뉴 글자색*/
+         transition:all 0.4s;} /*트랜지션 설정 */
+.submenu>li:hover {background:#524fa1; /*마우스오버 색깔*/
+               color:white;
+               }
+                      
+#imgslide {background:black; /*이미지 전환시 배경색 표현 */
+           width:1200px;
+           height:300px;
+           overflow:hidden; /*내용 초과된 이미지 2장을 숨김 */
+           position:relative; /*이미지 표시 기준 지정 */
+       }
+#imgslide > a {position:absolute; /* #imgslide relative에 위치 지정 */  
+               left:0;
+               top:0;
+               transition: all 3s;
+               overflow:hidden; /* 이미지 전환에 따른 구성 적용 */ 
+              }
+#imgslide > img {width:100%; /*기존 img 크기에 맞춤 */
+       }
+.text {width:500px;
+       height:50px;
+       background:rgba(0, 0, 0, 0.5);
+       position:absolute;
+       text-align:center;
+       color:#fff;
+       font-weight:bold;
+       line-height:50px;
+       left:30%; /*가운데 정렬 1200 중앙. 약 350px */
+       top:35%; /*가운데 정렬 300 중앙 약 125px */
+}
+
+/*콘텐츠*/           
+#contents {height:200px;}
+#contents > div {width:390px;
+                height:180px;
+                margin:10px 0px 10px 8px; 
+                float:left;}
+                
+/* 공지사항/갤러리 */                
+.cont1 {background:none;} 
+.tab_btm ul {overflow:hidden;} /* 공지사항 내용 밑으로 내리기 */
+.tab_btm li {float:left; /* 공지사항,갤러리 메뉴 */
+             width:100px;
+             background:#bbb;
+             text-align:center;
+             margin-right:-2px; /* border가 겹쳐져서 두꺼워 지는 것을 방지 */
+             border:1px solid #333;
+             border-bottom:none;
+             font-weight:bolder;}
+.tab_btm li a {padding:5px 0px; /*위아래 5px. */
+               }
+.tab_btm li:hover {background:violet;}
+.tab_btm li.active {background:#ddd;} /* 현재 활성화된 영역 색깔 */    
+
+/*공지사항 각 항목 */
+.tab_cont {background:white; 
+           width:395px;
+           height:148px;
+           border:1px solid black;
+           margin-left:-5px;} /* div공간 왼쪽으로 밀기 */
+.notice li {width:370px; /* 리스트 크기 조정 */
+              height:30px;
+              font-size:15px; /* 폰트 약간 작게 */
+              line-height:30px; /* 높이 중앙 정렬 */
+              margin-top:5px;
+              padding:0 5px;}
+.notice li:nth-child(2n) {background:#ddd;} /* 짝수 항목에 배경색 지정 */              
+.notice span {float:right;}  /*날짜 우측 정렬 */
+.notice li:hover {font-weight:bold;} /* 항목에 글자를 갖다 대면 글자색이 굵어짐 */          
+           
+/* 갤러리 */
+.gallery li {display:inline-block;
+             margin-top:20px;
+             margin-left:27px;} /*갤러리 수평으로 진열 */
+.gallery img:hover {opacity:0.5;}
+
+/*배너, 링크 이미지크기 줄이기*/
+.banner img, .link img {width:390px;
+                        height:180px;}
+
+/*배너, 링크 hover 만들기*/
+.banner img, .link img {transition:all 0.4s;}
+.banner img:hover {opacity:0.5;}
+.link img:hover {opacity:0.5;}                         
+/*배너 위 텍스트*/
+.banner, .link {position:relative;} /*포지션 잡아주기*/
+.bntext {position:absolute;
+         left:10%;
+         top:40%;
+         text-align:center;
+         background:rgba(0, 0, 0, 0.5);
+         color:white;
+         width:310px; height:50px;
+         line-height:50px;}
+  
+/*레이어팝업*/
+.modal {width:100%; /* 어두워지는 body 전체 내용 적용 */
+        height:100%;
+        background: rgba(0, 0, 0, 0.5); /* 반검정 상태 */
+        position:fixed; /* body기준으로 영역 지정 */
+        left:0; /* 맨왼쪽부터 */
+        top:0; /* 맨위부터 */
+        z-index:50; /* submenu(10)보다 상단에 위치 */
+        display: none; /* 팝업창 숨기기 */
+       }
+.body { /*팝업창 디자인 */
+       width:600px; /* 팝업창 크기 */
+       height:250px;
+       background:white; /*팝업창 배경색*/
+       border:5px solid #524fa1; /*테두리 주조색 */
+       padding:20px;
+       margin:150px auto;}  /* 화면 가운데 정렬 */    
+.button {text-align:right; /* div 버튼 위치 */
+         margin-top:10px;
+       } 
+button { /* 버튼 디자인 */
+       background-color:#817cfd; /*보조색 */ 
+       width:60px;
+       height:30px;
+       font-size:15px;
+       border:none;
+       padding: 5px 10px;
+       border-radius:5px;
+       color:white;
+       font-weight:bolder;
+       }
+
+/*푸터 배경색은 주조색 보조색보다 어둡게 */
+footer {height:100px;
+       text-align:center;
+       background:#5751ff;} 
+footer > div {height:100px;
+              float:left;
+              margin-top:30px;}
+.copy {width:800px;
+       color:white;
+       padding:10px;
+       font-weight:bolder;}
+.sns {width:200px;
+      color:white;}
+.sns li {width:50px;
+          display:inline-block;
+          margin-right:8px;}
+.sns img {width:90%;}   
+.sns img:hover {opacity:0.5;}       
